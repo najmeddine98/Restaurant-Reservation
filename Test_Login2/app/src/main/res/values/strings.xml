@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test_Login1</string>
+    <string name="title_activity_page1">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user">user </string>
+</resources>

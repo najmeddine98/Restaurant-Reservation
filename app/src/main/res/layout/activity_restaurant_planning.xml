@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantPlanning">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:id="@+id/profile_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/inverse_logo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:text="Reservation Table"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_logo"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:text="Select Your Table Please"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/plann"
+            android:layout_width="427dp"
+            android:layout_height="388dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.226"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:text="Alredy Reserved Table:"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <ListView
+            android:id="@+id/listbumisson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:divider="#FFFFFF"
+            android:dividerHeight="10.0sp"
+            tools:ignore="MissingConstraints">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

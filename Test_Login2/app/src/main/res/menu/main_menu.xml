@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group  android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/user"/>
+
+        <item
+            android:id="@+id/statistique"
+            android:title="Statistique"
+            android:icon="@drawable/statistique"/>
+
+        <item
+            android:id="@+id/client"
+            android:title="Client"
+            android:icon="@drawable/client"/>
+
+
+        <item
+            android:id="@+id/reservation"
+            android:title="Reservation"
+            android:icon="@drawable/reservation_list"/>
+
+        <item
+            android:id="@+id/calandrier"
+            android:title="Calandrier"
+            android:icon="@drawable/calandrier"/>
+
+        <item
+            android:id="@+id/navigation_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>

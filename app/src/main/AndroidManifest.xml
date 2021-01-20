@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.najmeddine.BestReservation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.najmeddine.BestReservation.user_submission"></activity>
+        <activity android:name="com.najmeddine.BestReservation.RestaurantPlanning">
+
+        </activity>
+        <activity android:name="com.najmeddine.BestReservation.AdminReservation" />
+        <activity android:name="com.najmeddine.BestReservation.AdminProfile" />
+        <activity android:name="com.najmeddine.BestReservation.AdminMainActivity" />
+        <activity android:name="com.najmeddine.BestReservation.NewLogin" />
+        <activity android:name="com.najmeddine.BestReservation.Introdoctor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.najmeddine.BestReservation.VerfyOTP" />
+        <activity android:name="com.najmeddine.BestReservation.test" />
+        <activity android:name="com.najmeddine.BestReservation.MainActivity" />
+        <activity android:name="com.najmeddine.BestReservation.RservationForm" />
+        <activity android:name="com.najmeddine.BestReservation.Exit" />
+        <activity android:name="com.najmeddine.BestReservation.Info" />
+        <activity android:name="com.najmeddine.BestReservation.Calandrier" />
+        <activity android:name="com.najmeddine.BestReservation.Reservation" />
+        <activity android:name="com.najmeddine.BestReservation.Statistique" />
+        <activity android:name="com.najmeddine.BestReservation.Client" />
+        <activity android:name="com.najmeddine.BestReservation.Profile" />
+        <activity android:name="com.najmeddine.BestReservation.Login" />
+        <activity android:name="com.najmeddine.BestReservation.Regester" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

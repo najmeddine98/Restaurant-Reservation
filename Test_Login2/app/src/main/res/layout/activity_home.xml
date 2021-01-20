@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/math_bg"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:shadowColor="#DC7611"
+                        android:text="ADD RESERVATION"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/math_bg"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RESERVATION LIST"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_list"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/math_bg"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLIENT PROFILE"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_user"
+                    android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/math_bg"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CANCEL RESERVATION"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="0dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_cancel" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

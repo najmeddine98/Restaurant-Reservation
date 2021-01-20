@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/bg"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/profile_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/inverse_logo"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/full_name"
+                    android:layout_width="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bungee"
+                    android:text="User Profile"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/profile_logo"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Profile"
+                    android:textSize="14sp"
+                    android:includeFontPadding="false"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/full_name"
+                    android:layout_toRightOf="@+id/profile_logo"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginTop="-100dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#fcdada"
+                    app:cardElevation="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/userTypeLogo"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_profiluser"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/userType_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="20dp"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/bungee"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/userTypeLogo"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Administration Class"
+                            android:textSize="14sp"
+                            android:layout_below="@id/userType_Title"
+                            android:layout_centerHorizontal="true"
+                            android:includeFontPadding="false"/>
+
+
+                    </RelativeLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#fcdada"
+                    app:cardElevation="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/rservationLogo"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_reservation"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/rerservation_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="000"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="20dp"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/bungee"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/rservationLogo"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bookings"
+                            android:textSize="14sp"
+                            android:layout_below="@id/rerservation_Title"
+                            android:layout_centerHorizontal="true"
+                            android:includeFontPadding="false"/>
+
+
+                    </RelativeLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:id="@+id/profileFullName"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user"
+
+                        android:drawablePadding="10dp"
+                        android:background="@color/white"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="E-Mail"
+                    android:id="@+id/profileEmail"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawablePadding="10dp"
+                        android:background="@color/white"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profiePass"
+                    android:hint="Password"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_pass"
+                        android:drawablePadding="10dp"
+                        android:background="@color/white"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:id="@+id/profilePhone"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_contact_phone"
+                        android:drawablePadding="10dp"
+                        android:background="@color/white"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:onClick="update"
+                    android:fontFamily="@font/bungee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/primary"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/bottem_nav_menu" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

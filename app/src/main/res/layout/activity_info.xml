@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/info_layout"
+    tools:context=".Info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg"
+            android:padding="20dp"
+            >
+        <ImageView
+            android:id="@+id/profile_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/inverse_logo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:text="About Us"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_logo"
+            android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qui sommes nous ? "
+            android:textColor="@color/primary"
+            android:textSize="27dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="108dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            tools:layout_editor_absoluteY="47dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Bienvenue à notre restaurant
+planet food, nous offrons de multiples plats tunisiens et étrangers.
+Nos plats sont délicieux et préparés par des chefs expérimentés.
+Pour plus d'informations, contactez nous sur ce numéro : 94589677"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="205dp" />
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
